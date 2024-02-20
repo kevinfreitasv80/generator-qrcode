@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generator QR Code</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+        <link rel="stylesheet" href="./assets/style.css">
+        <script defer src="./assets/script.js"></script>
+    </head>
+    <body class="bg-black">
+        <span class="message">Please enter valid text.</span>
+        <article class="createQR">
+            <form>
+                <select id="size">
+                    <option disabled selected>Select one size</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="150">150</option>
+                    <option value="200">200</option>
+                    <option value="250">250</option>
+                    <option value="300">300</option>
+                    <option value="350">350</option>
+                    <option value="400">400</option>
+                    <option value="450">450</option>
+                    <option value="500">500</option>
+                    <option value="550">550</option>
+                    <option value="600">600</option>
+                    <option value="650">650</option>
+                    <option value="700">700</option>
+                    <option value="750">750</option>
+                    <option value="800">800</option>
+                    <option value="850">850</option>
+                    <option value="900">900</option>
+                    <option value="950">950</option>
+                </select>
+                <input id="text" type="text" placeholder="Text">
+                <button type="submit">Create QR Code</button>
+            </form>
+        </article>
+        <section class="sectionImg">
+            <img src="./img/qrcode.png" alt="QR Code">
+        </section>
+    </body>
+</html>

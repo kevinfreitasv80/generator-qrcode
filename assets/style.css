@@ -1,0 +1,71 @@
+body, button, input, select {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: rgb(19, 78, 74);
+}
+body span {
+  display: none;
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(255, 32, 51);
+  color: white;
+  padding: 1em;
+  border-radius: 0.4em;
+}
+body .createQR, body .sectionImg {
+  display: flex;
+  justify-content: center;
+  margin: 5em 0;
+}
+body .createQR form {
+  border-radius: 1em;
+  padding: 2em 3em;
+  background: rgb(15, 118, 110);
+}
+body .createQR form *:not(:last-child) {
+  margin-right: 1em;
+}
+body .createQR form input, body .createQR form button {
+  border-radius: 5em;
+  padding: 1em 2em;
+  border: none;
+}
+body .createQR form select {
+  background-color: #eee;
+  padding: 0.5em 1em;
+  color: #333;
+}
+body .createQR form button {
+  border: none;
+  background: rgb(20, 184, 166);
+  color: white;
+  cursor: pointer;
+  transition: color;
+}
+body .createQR form button:hover {
+  background: #17cfbb;
+}
+
+@media screen and (max-width: 41.25em) {
+  .createQR form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .createQR form *:not(:last-child) {
+    margin-bottom: 1em;
+  }
+  .createQR form input, .createQR form select {
+    margin-right: 0 !important;
+  }
+}
+@media screen and (max-width: 18.75em) {
+  .createQR form {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
